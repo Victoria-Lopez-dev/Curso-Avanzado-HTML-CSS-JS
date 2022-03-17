@@ -1,0 +1,58 @@
+body{
+   
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.texto{
+    width: 200px; 
+    height: 200px;  
+}
+
+.uno{
+    transform: rotate(320deg);/* permite rotar el elemento en X e Y*/
+    background-color: violet;
+}
+.dos{
+ /*                       x   y    */   
+    transform: translate(100px,20px) ;/* permite trasladar el elemento en X e Y*/
+    background-color: greenyellow;
+}
+.tres{
+    background-color: lightblue;
+    transition: transform 5s ease-in;
+}
+
+.tres:hover{
+
+    transform: scale(1.2);/* escalar el elemento ya sea haciendolo mas grande o chico sin perder su proporcion*/
+}
+.cuatro{
+    background-color: brown;
+    /*                x      y   */
+    transform: skew(-30deg, 10deg);
+}
+
+/* matrix(a,b,c,d,e,f) 
+
+a->  scaleX()
+b-> skewY()
+c-> skewX()
+d->scaleY()
+e->translateX()
+f->translateY()
+
+*/
+
+.padre-contendor{
+    perspective: 100px;
+    width: 500px;
+    margin-left: 100px;
+    margin-bottom: 100px;
+}
+.cubo{
+    background-color: crimson;
+    transform:translateZ(10px)
+}
