@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Clase 2</title>
+</head>
+<body>
+    <h1>Usando propiedades de video</h1>
+    
+    <video poster="../muestra/IMAGEN.jpg" >
+        <source src="./video2.mp4" >
+        <source src="./video2.ogv" >
+    </video>
+    <div class="barra">
+        <button class="inicio" onclick="inicioVideo()" >Inicio</button>
+        <button class="pausa" onclick="pausarVideo()">Pausa</button>
+
+        <p class="duracion"></p>
+    </div>
+
+
+    <video poster="../muestra/IMAGEN.jpg" loop autoplay >
+        <source src="./video2.mp4" >
+        <source src="./video2.ogv" >
+    </video>
+    <div class="barra">
+        <button class="inicio" onclick="inicioVideo()">Inicio</button>
+        <button class="pausa" onclick="pausarVideo()">Pausa</button>
+
+        <p class="duracion"></p>
+    </div>
+
+
+
+
+
+
+    <script src="./script.js"></script>
+</body>
+</html>

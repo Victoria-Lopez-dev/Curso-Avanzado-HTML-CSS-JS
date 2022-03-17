@@ -1,0 +1,25 @@
+.cohete{
+    width: 100px;
+}
+p{
+    background-color: pink;
+    color: brown;
+    font-size: 16px;
+}
+
+#text1{
+
+}
+/* vh  y vw*/
+.card{
+    width: 200px;
+    background-color: lightcoral;
+    border: 2px solid darkmagenta;
+}
+.image-card{
+    width: 100%;
+}
+
+button:hover{
+    background-color: darksalmon;
+}

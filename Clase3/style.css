@@ -1,0 +1,55 @@
+.container{
+    height: 200px;
+ background-color: brown;
+ display: flex;
+ gap: 5px;
+ flex-flow: column wrap;
+ align-items: center;
+ justify-content: space-evenly;
+ /*flex-direction: row;
+ flex-wrap: wrap;*/
+}
+
+.contenido{
+    width: 50px;
+    height: 50px;
+    background-color: pink;
+    border: 1px solid darkmagenta;
+/*    flex-basis: 200px;*/
+}
+
+.verde{
+    background-color: green;
+    align-self: flex-start;
+    justify-self: flex-end;
+   /* flex-shrink: 2;*/
+}
+
+
+/*-- GRID-----*/
+/* aling-item / aling-self      justify-content / justify-self
+
+place-item  place-self */
+.contenedor{
+    height: 500px;
+    background-color: lightseagreen;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    /*     align-items justify-content*/
+    place-items: start center;
+}
+
+.cubos{
+    height: 100px;
+    width: 50px;
+    background-color: orange;
+    border: 2px solid black;
+}
+
+.tres{
+    place-self: center end;
+}
+
+/* Git - sistema de versionado*/
+/* Github */
