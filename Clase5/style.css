@@ -1,0 +1,36 @@
+#ejemplo{
+    animation-name: trasladar;
+    animation-duration: 5s;
+    animation-iteration-count: 2;
+}
+
+svg{
+    border: 2px solid black;
+   
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+#circulo{
+    animation-name: trasladar;
+    animation-duration: 5s;
+    animation-iteration-count: 2;
+}
+
+@keyframes trasladar{
+    from{
+        transform: translate(0px,0px);
+    }
+    to{
+        transform: translate(100px,100px);
+    }
+}
+
+#rect-rosa:hover{
+    transform: rotate(25deg);
+    transition: 5s;
+}

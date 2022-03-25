@@ -1,0 +1,21 @@
+<svg width="500px"  height= "300px">
+
+        <rect id="rect-rosa" x="200" y="100" fill="violet" width="100px" height="100px" rx="20"></rect>
+       <rect x="220" y ="150" stroke="#333333" strokewidth="10" width="100px" height="100px" fill="none"></rect>
+        
+    <!--                  x  y   x  y   x    y         -->
+       <polygon   points="200 20,150 50, 140 20 , 150 100, 200 50"  fill="blue"></polygon>
+  
+   <!--             coordenada del centro           
+                    eje "x"       eje "y"            -->    
+       <circle r=70 cx="150" cy="100" fill="orange" stroke="brown"></circle>
+        
+       <ellipse  cx="300" cy="200" rx="50" ry="70" fill="green"></ellipse>
+      
+      
+       <line x1="400" y1="100" x2="499" y2="200" stroke="red "></line>
+       <line x1="499" y1="200" x2="400" y2="400" stroke="red "></line>
+
+        <polyline points="2 200 , 50 200,50 250 ,100 250" fill="none" stroke="black">
+        </polyline>
+    </svg>   
