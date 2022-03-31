@@ -1,3 +1,4 @@
-let circulo = document.querySelector('#circulo')
+let circulo = document.querySelector('#circulo');
 
-circulo.addEventListener('mouseover',()=>{alert("CLIck")})
+circulo.addEventListener('mouseover',()=>{alert("CLIck")});
+

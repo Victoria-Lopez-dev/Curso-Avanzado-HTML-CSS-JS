@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas width="800px" height="300px" style="border:2px solid black"></canvas>
+
+    <script>
+     
+        var elemento=document.querySelector('canvas');
+        lienzo=elemento.getContext('2d');
+        window.addEventListener('load', animacion, false);
+
+     function animacion(e){
+        lienzo.clearRect(0,0,300,500);       
+        var angulo=Math.atan2(200,110);
+        var x=220+Math.round(Math.sin(angulo)*10);
+        var y=150+Math.round(Math.cos(angulo)*10);
+        lienzo.beginPath();
+        lienzo.arc(220,150,20,0,Math.PI*2, false);
+        lienzo.moveTo(220+70,150);
+        lienzo.arc(220+50,150,20,0,Math.PI*2, false);
+        lienzo.stroke();
+        lienzo.beginPath();
+        lienzo.moveTo(x+10,y);
+        lienzo.arc(x,y,10,0,Math.PI*2, false);
+        lienzo.moveTo(x+60,y);
+        lienzo.arc(x+50,y,10,0,Math.PI*2, false);
+        lienzo.fill();
+        } 
+
+        window.addEventListener('mousemove', mover, false);
+        function mover(e){
+        lienzo.clearRect(0,0,300,500);
+        var angulo=Math.PI*180/25;
+        var x=220+Math.round(Math.sin(angulo)*10);
+        var y=150+Math.round(Math.cos(angulo)*10);
+        lienzo.beginPath();
+        lienzo.arc(220,150,20,0,Math.PI*2, false);
+        lienzo.moveTo(290,150);
+        lienzo.arc(270,150,20,0,Math.PI*2, false);
+        lienzo.stroke();
+        lienzo.beginPath();
+        lienzo.moveTo(x+10,y);
+        lienzo.arc(x,y,10,0,Math.PI*2, false);
+        lienzo.moveTo(x+60,y);
+        lienzo.arc(x+50,y,10,0,Math.PI*2, false);
+        lienzo.fill();
+        } 
+    </script>
+ 
+</body>
+</html>
