@@ -26,7 +26,7 @@ lienzo.strokeStyle="green"
 lienzo.moveTo(100,50);
 
 //              x   y
-lienzo.lineTo(300,100);
+lienzo.lineTo(300,100); 
 lienzo.stroke()
 lienzo.closePath();
 
