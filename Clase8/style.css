@@ -29,10 +29,13 @@ section{
     padding: 100px;
 
 }
+
+.botonDay{
+        background-color: #133983;
+        color: white;
+}
 .boton{
-    background-color: #133983;
     padding: 5px;
-    color: white;
     border: 2px solid black;
     width: 80px;
 }
@@ -71,4 +74,15 @@ img{
     display: flex;
     justify-content: center;
 
+}
+
+/*tema noche*/
+
+.fondo{
+    background-color: #133983;
+}
+
+.botonNight{
+    background-color: #7EAAFF;
+    color: black;
 }
