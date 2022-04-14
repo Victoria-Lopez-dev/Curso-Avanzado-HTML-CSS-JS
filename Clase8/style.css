@@ -1,0 +1,74 @@
+body{
+    background-color: beige;
+}
+header{
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+    margin-left: 50px;
+}
+.logo{
+    width: 80px;
+}
+
+ul{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+section{
+    display: flex;
+    flex-direction: row;
+    gap:100px;
+    padding: 100px;
+
+}
+.boton{
+    background-color: #133983;
+    padding: 5px;
+    color: white;
+    border: 2px solid black;
+    width: 80px;
+}
+
+button:active{
+    background-color: black;
+}
+
+.card{
+    width: 250px;
+    border: 2px solid #7EAAFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 2px;
+    background-color:#7EAAFF;
+}
+
+img{
+    width: 80%;
+}
+.compra{
+    width: 50px;
+    position: relative;
+    left: 95%;
+   
+}
+.circulo{
+    background-color:#7EAAFF;
+    width: 20px;
+    position: absolute;
+    bottom: 0px;
+    right: 10px;
+    border-radius: 20%;
+    display: flex;
+    justify-content: center;
+
+}
